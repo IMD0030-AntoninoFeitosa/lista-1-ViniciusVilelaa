@@ -12,7 +12,7 @@ int main(void)
     std::cout<<"Informe o valor inteiro 5 vezes"<<std::endl;
 
 
-    while (cont < 5)
+    while (cont < SIZE)
     {
         cin>>numero;
         if (numero < 0)
