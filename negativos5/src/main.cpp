@@ -9,7 +9,7 @@ int main(void)
     int negativos = 0;
     int numero;
 
-    std::cout<<"Informe o valor inteiro 5 vezes"<<std::endl;
+    cout<<"Informe o valor inteiro 5 vezes ";
 
 
     while (cont < SIZE)
