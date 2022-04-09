@@ -1,9 +1,19 @@
 #include "function.h"
 
+
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
-    // TODO: adicione o seu código aqui.
+    unsigned int sequencia = 0;
+    unsigned int a = 0 , b = 1;
 
-    // TODO: Isto é apenas um STUB. Troque o retorno pelo que você julgar correto.
-    return std::vector<unsigned int>{};
+
+    for( int i = 0; i < n; i++)
+    {
+        sequencia = (a + b);
+        a = b;
+        b = sequencia;
+    }
+            
+ 
+    return std::vector<unsigned int>{b};
 }
