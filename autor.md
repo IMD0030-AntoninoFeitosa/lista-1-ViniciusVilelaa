@@ -11,8 +11,8 @@ Preencha os dados abaixo para identificar a autoria do trabalho.
 - [X] Negativos 5
 - [X] Soma Vizinhos
 - [X] Intervalos
-- [ ] Fibonacci
-- [ ] Minmax
+- [X] Fibonacci
+- [X] Minmax
 - [ ] Inverter
 - [ ] Filtragem
 - [ ] Ponto em Retângulo 1
