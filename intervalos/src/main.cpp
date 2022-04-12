@@ -52,7 +52,7 @@ int main(void)
     porcent_3 = (intervalo_3/cont) * 100;
     porcent_4 = (intervalo_4/cont) * 100;
     soma = cont - (intervalo_1 + intervalo_2 + intervalo_3 + intervalo_4);
-    porcent_tot = (soma/cont) * 100;
+    porcent_tot = ((static_cast<double>(soma))/(static_cast<double>(cont))) * 100;
 
 
 
