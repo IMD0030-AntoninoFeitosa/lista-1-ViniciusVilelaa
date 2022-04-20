@@ -1,19 +1,26 @@
 #include "function.h"
 
 
-std::vector<unsigned int> fib_below_n( unsigned int n )
-{
-    unsigned int sequencia = 0;
-    unsigned int a = 0 , b = 1;
+std::vector<unsigned int> fib_below_n( unsigned int n ){
+  std::vector<unsigned int> valores;
+  
+  if(n > 1){
+    valores.push_back(1);
+    valores.push_back(1);
+    
+    int tamanho = valores.size();
 
+    unsigned int proximo = valores[tamanho-2] + valores[tamanho-1];
 
-    for( int i = 0; i < n; i++)
-    {
-        sequencia = (a + b);
-        a = b;
-        b = sequencia;
+    while(proximo < n){
+      valores.push_back(proximo);
+      tamanho = valores.size();
+      proximo = valores[tamanho-2] + valores[tamanho-1];
     }
-            
+  }  
+
+  
+
  
-    return std::vector<unsigned int>{b};
+  return valores;
 }

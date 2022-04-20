@@ -1,30 +1,19 @@
 #include <iostream>
-using namespace std;
+using std::cin;
+using std::cout;
 
 const int SIZE = 5; // input size.
 
 int main(void)
 {
-    int cont = 0;
-    int negativos = 0;
-    int numero;
-
-    cout<<"Informe o valor inteiro 5 vezes ";
-
-
-    while (cont < SIZE)
-    {
-        cin>>numero;
-        if (numero < 0)
-        {
-           negativos = negativos +1;
-        }
-        cont = cont + 1;
-
+    int valor, count=0;
+    for(int i=0;i<SIZE; i++){
+      cin>>std::ws>>valor;
+      if(valor<0){
+      count++;
     }
-    
-    cout<<"A quantidade de negativos é "<< negativos <<endl;
-
+  }
+  cout<<count;
     
 
     return 0;
